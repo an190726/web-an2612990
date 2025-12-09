@@ -1,0 +1,138 @@
+/* Thiết lập chung (Giữ nguyên) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f2f5;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 5px;
+}
+
+/* ------------------------------------------- */
+/* --- Vùng 1 (Giữ nguyên định dạng cũ) --- */
+/* ------------------------------------------- */
+#vung-1 {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+.nav-link:link { color: #2980b9; background-color: #ecf0f1; border-color: #2980b9; }
+.nav-link:visited { color: #7f8c8d; background-color: #f7f9f9; border-color: #7f8c8d; }
+.nav-link:hover { color: white; background-color: #3498db; transform: translateY(-2px); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+.nav-link:active { color: white; background-color: #27ae60; transform: translateY(1px); }
+
+
+/* ------------------------------------------- */
+/* --- Vùng 2: Form Có Khung (Fieldset) --- */
+/* ------------------------------------------- */
+#vung-2 {
+    background-color: #ffffff;
+    padding: 15px; /* Giảm padding tổng thể */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Định dạng chung cho Fieldset (khung) */
+fieldset {
+    border: 1px solid #ccc; /* Viền khung mặc định */
+    padding: 10px 15px;
+    margin-bottom: 20px; /* Khoảng cách giữa các khung */
+    border-radius: 5px;
+}
+
+/* Định dạng tiêu đề khung */
+legend {
+    font-weight: bold;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Ẩn tiêu đề của khung khi cần (nếu bạn muốn khung không có chữ) */
+/* Ví dụ: để khung Tên, Email, Quốc gia không có chữ, bạn có thể dùng CSS sau: */
+/*
+.input-fields legend {
+    display: none;
+}
+*/
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Định dạng cho input và select */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    box-sizing: border-box; 
+}
+
+/* Sở Thích - Đảm bảo nằm ngang */
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Nhóm nút Đăng Nhập/Thoát */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 48%;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.submit-btn:hover { background-color: #2980b9; }
+.reset-btn:hover { background-color: #c0392b; }
