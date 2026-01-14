@@ -3,71 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài Tập CSS - 09/12 (Khung Fieldset)</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Xây dựng trang web - WEB_KTM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <div id="vung-1">
-        <h2>menu</h2>
-        <nav>
-            <a href="#" class="nav-link">Trong Chờ</a>
-            <a href="#thong-tin" class="nav-link">Thông Tin</a>
-            <a href="#dich-vu" class="nav-link">Phục Vụ</a>
-        </nav>
-    </div>
+    <div class="container">
+        <div class="card-section">
+            <div class="card">
+                <div class="icon-circle blue-bg"><i class="fa-solid fa-location-dot"></i></div>
+                <h3>Card title treatment</h3>
+                <p>With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-blue">Go somewhere</a>
+            </div>
 
-    <hr>
+            <div class="card">
+                <div class="icon-circle green-bg"><i class="fa-solid fa-leaf"></i></div>
+                <h3>Card title treatment</h3>
+                <p>With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-green">Go somewhere</a>
+            </div>
 
-    <div id="vung-2">
-        <h2>dữ liệu</h2>
-        <form action="#" method="POST" class="custom-form">
-            
-            <fieldset class="input-fields">
-                <legend>Thông Tin Cơ Bản</legend>
-                
-                <div class="form-group">
-                    <label for="name">Tên:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="country">Quốc gia:</label>
-                    <select id="country" name="country">
-                        <option value="vn" selected>Việt Nam</option>
-                        <option value="us">Hoa Kỳ</option>
-                    </select>
-                </div>
-            </fieldset>
+            <div class="card">
+                <div class="icon-circle orange-bg"><i class="fa-solid fa-sun"></i></div>
+                <h3>Card title treatment</h3>
+                <p>With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-orange">Go somewhere</a>
+            </div>
+        </div>
 
-            <fieldset class="hobbies-field">
-                <legend>Sở Thích</legend>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="sport" name="hobby" value="sport">
-                    <label for="sport">Thể thao</label>
+        <hr>
 
-                    <input type="checkbox" id="reading" name="hobby" value="reading">
-                    <label for="reading">Đọc sách</label>
+        <div class="button-section">
+            <h2>Basic Elements</h2>
+            <h3>Buttons</h3>
+            <div class="btn-group">
+                <button class="btn-outline">Default Button</button>
+                <button class="btn-filled">Filled Button</button>
+                <button class="btn-round">Round Button</button>
+                <button class="btn-filled"><i class="fa-solid fa-heart"></i> Button With Icon</button>
+                <button class="btn-link">Simple Button</button>
+            </div>
 
-                    <input type="checkbox" id="music" name="hobby" value="music">
-                    <label for="music">Nghe nhạc</label>
-                </div>
-            </fieldset>
-
-            <fieldset class="button-field">
-                <legend>Hành Động</legend>
-                <div class="button-group">
-                    <button type="submit" class="submit-btn">Đăng Nhập</button>
-                    <button type="reset" class="reset-btn">Thoát</button>
-                </div>
-            </fieldset>
-
-        </form>
+            <div class="btn-group colors">
+                <button class="btn-color primary">Primary link</button>
+                <button class="btn-color secondary">Secondary link</button>
+                <button class="btn-color success">Success link</button>
+                <button class="btn-color danger">Danger link</button>
+                <button class="btn-color warning">Warning link</button>
+                <button class="btn-color info">Info link</button>
+                <button class="btn-color dark">Dark link</button>
+            </div>
+        </div>
     </div>
 
 </body>
